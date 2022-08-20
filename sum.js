@@ -10,4 +10,22 @@ return string.length;
 
 const reverseString = (string) => string.split('').reverse().join('');
 
-module.exports = {stringLength, reverseString};
+
+class Calculator {
+	add(x, y) {
+		return x + y;
+	}
+	sub(x, y) {
+		return x - y;
+	}
+	mult(x, y) {
+		return x * y;
+	}
+	div(x, y) {
+		return x / y;
+	}
+}
+
+const calculator = new Calculator();
+
+module.exports = {stringLength, reverseString, Calculator};

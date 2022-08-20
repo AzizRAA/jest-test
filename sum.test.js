@@ -1,4 +1,4 @@
-const {stringLength, reverseString} = require('./sum.js');
+const {stringLength, reverseString, Calculator} = require('./sum.js');
 
 test('counts string', () => {
 	expect(stringLength('Hi World')).toBe(8);
@@ -14,4 +14,12 @@ test('empty string', () => {
 
 test('reverse string', () => {
 	expect(reverseString('world')).toBe('dlrow');
+});
+
+describe('Calculator ', () => {
+	const calculator = new Calculator();
+	describe('add num', () => {
+		test('test', () => expect(calculator.add(7, 2)).toEqual(9));
+	});
+    
 });
