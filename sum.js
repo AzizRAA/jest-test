@@ -1,5 +1,3 @@
-function sum(a, b) {
-    return a + b;
-  }
-  
-  module.exports = sum;
+const stringLength = (string) => string.length;
+
+module.exports = stringLength;
